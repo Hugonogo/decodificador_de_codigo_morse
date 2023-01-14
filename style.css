@@ -1,0 +1,94 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    align-items: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    background-color: #353634;
+}
+header{
+    width: 100%;
+    height: 100px;
+    background-color: #2b2b2b;   
+}
+#headertext{
+    color: white;
+    padding: 20px;
+}
+
+main{
+    display: flex;
+    margin: auto;
+    max-width: 1200px;
+    min-width: 300px;
+
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    background-color: #bd101ce0;
+    border-radius: 10px;
+    flex-direction: row;
+}
+#criptext{
+    width: 391px;
+    height: 170px;
+    box-sizing: border-box;
+    resize: none;
+}
+#criptresult{
+    width: 391px;
+    height: 165px;
+    box-sizing: border-box;
+    resize: none;
+}
+footer{
+    width: 100%;
+    height: 400px;
+    text-align: left;
+    background-color: #2b2b2b;
+}
+#footertext{
+    padding: 20px;
+    color: aliceblue;
+}
+.buttons{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    position: relative;
+}
+#criptografar{
+    color: #FFFFFF;
+    background-color: #2b2b2b;
+    position: relative;
+    
+}
+#traduzir{
+    color: #FFFFFF;
+    background-color: #2b2b2b;
+    position: relative;
+}
+#criptografar{
+    margin: 2px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 30px;   
+}
+#traduzir{
+    margin: 2px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 30px;
+}
+.link{
+    color: #FFFFFF;
+}
