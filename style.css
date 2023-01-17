@@ -15,18 +15,18 @@ header{
     width: 100%;
     height: 48px;
     background-color: #2b2b2b;   
-    display: flex;
+    color: white;
+    
+    text-align: center;
    
 }
-#headertext{
-    color: white;
-}
+
 
 main{
     display: flex;
     margin: auto;
     max-width: 1200px;
-    min-width: 300px;
+    min-width: 280px;
 
 }
 
@@ -34,7 +34,7 @@ main{
     width: 100%;
     height: 100%;
     padding: 10px;
-    background-color: #2b2b2b;
+    background-color: #19191a;
     border-radius: 10px;
     flex-direction: row;
 }
@@ -43,12 +43,16 @@ main{
     height: 170px;
     box-sizing: border-box;
     resize: none;
+    background-color: #FFFF;
+   
 }
 #criptresult{
     width: 391px;
     height: 165px;
     box-sizing: border-box;
     resize: none;
+    background-color: #FFFF;
+    margin: 2px;
 }
 footer{
     width: 100%;
