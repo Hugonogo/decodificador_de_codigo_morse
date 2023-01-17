@@ -1,4 +1,4 @@
-#Decodificador de código morse
+<h1>Decodificador de código morse</h1>
 <p>Um desafio simples em html, js e css. Houve uma tentativa de implementar responsividade na página :P</p>
 <h2>Código morse</h2>
 <p>"O Código Morse é um sistema de representação de letras, algarismos e sinais de pontuação através de um sinal codificado enviado de modo intermitente."</p>
