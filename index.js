@@ -98,8 +98,6 @@ function decriptografar() {
     demorse = demorse.replace(/dahdahdahdahdit/gi, "9");
     demorse = demorse.replace(/dahdahdahdahdah/gi, "0");
 
-    //Pontuação
-    demorse = demorse.replace(/ditdahditdahditdah/gi, ".");
     resultText.innerText = demorse;
 
 }
