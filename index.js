@@ -57,7 +57,7 @@ function decriptografar() {
     let demorse = text.value;
     let msgConverted = [];
     //Alfabeto
-    var alphabet = {  
+    let alphanun = {  
    "-----":"0",
    ".----":"1",
    "..---":"2",
@@ -98,7 +98,7 @@ function decriptografar() {
 };
 demorse.split("/").map(function (word) {
     word.split(" ").map(function (letter) {
-        msgConverted.push(alphabet[letter]);
+        msgConverted.push(alphanun[letter]);
     });
     msgConverted.push(" ");
 });
