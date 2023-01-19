@@ -55,50 +55,54 @@ function criptografar() {
 
 function decriptografar() {
     let demorse = text.value;
+    let msgConverted = [];
     //Alfabeto
-    demorse.replace(".", "dit");
-    demorse.replace("-", "dah");
-    demorse = demorse.replace(/ditdah/gi , "A");
-    demorse = demorse.replace(/dahditditdit/gi , "B");
-    demorse = demorse.replace(/dahditdahdit/gi , "C");
-    demorse = demorse.replace(/dahditdit/gi , "D");
-    demorse = demorse.replace(/dit/gi , "E");
-    demorse = demorse.replace(/ditditdahdit/gi , "F");
-    demorse = demorse.replace(/dahdahdit/gi , "G");
-    demorse = demorse.replace(/ditditditdit/gi , "H");
-    demorse = demorse.replace(/ditdit/gi , "I");
-    demorse = demorse.replace(/ditdahdahdah/gi , "J");
-    demorse = demorse.replace(/dahditdah/gi , "K");
-    demorse = demorse.replace(/ditdahditdit/gi , "L");
-    demorse = demorse.replace(/dahdah/gi , "M");
-    demorse = demorse.replace(/dahdit/gi , "N");
-    demorse = demorse.replace(/dahdahdah/gi , "O");
-    demorse = demorse.replace(/ditdahdahdit/gi , "P");
-    demorse = demorse.replace(/dahdahditdah/gi , "Q");
-    demorse = demorse.replace(/ditdahdit/gi , "R");
-    demorse = demorse.replace(/ditditdit/gi , "S");
-    demorse = demorse.replace(/dah/gi , "T");
-    demorse = demorse.replace(/ditditdah/gi , "U");
-    demorse = demorse.replace(/ditditditdah/gi , "V");
-    demorse = demorse.replace(/ditdahdah/gi , "W");
-    demorse = demorse.replace(/dahditditdah/gi , "X");
-    demorse = demorse.replace(/dahditdahdah/gi , "Y");
-    demorse = demorse.replace(/dahdahditdit/gi , "Z");
-    demorse = demorse.replace(/\//gi, " ");
-
-    //Números
-    demorse = demorse.replace(/ditdahdahdahdah/gi, "1");
-    demorse = demorse.replace(/ditditdahdahdah/gi, "2");
-    demorse = demorse.replace(/ditditditdahdah/gi, "3");
-    demorse = demorse.replace(/ditditditditdah/gi, "4");
-    demorse = demorse.replace(/ditditditditdit/gi, "5");
-    demorse = demorse.replace(/dahditditditdit/gi, "6");
-    demorse = demorse.replace(/dahdahditditdit/gi, "7");
-    demorse = demorse.replace(/dahdahdahditdit/gi, "8");
-    demorse = demorse.replace(/dahdahdahdahdit/gi, "9");
-    demorse = demorse.replace(/dahdahdahdahdah/gi, "0");
-
-    resultText.innerText = demorse;
+    var alphabet = {  
+   "-----":"0",
+   ".----":"1",
+   "..---":"2",
+   "...--":"3",
+   "....-":"4",
+   ".....":"5",
+   "-....":"6",
+   "--...":"7",
+   "---..":"8",
+   "----.":"9",
+   ".-":"a",
+   "-...":"b",
+   "-.-.":"c",
+   "-..":"d",
+   ".":"e",
+   "..-.":"f",
+   "--.":"g",
+   "....":"h",
+   "..":"i",
+   ".---":"j",
+   "-.-":"k",
+   ".-..":"l",
+   "--":"m",
+   "-.":"n",
+   "---":"o",
+   ".--.":"p",
+   "--.-":"q",
+   ".-.":"r",
+   "...":"s",
+   "-":"t",
+   "..-":"u",
+   "...-":"v",
+   ".--":"w",
+   "-..-":"x",
+   "-.--":"y",
+   "--..":"z",
+   "/":" ",
+};
+demorse.split("/").map(function (word) {
+    word.split(" ").map(function (letter) {
+        msgConverted.push(alphabet[letter]);
+    });
+    msgConverted.push(" ");
+});
+    resultText.innerText = msgConverted.join("");
 
 }
 
